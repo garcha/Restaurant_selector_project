@@ -4,20 +4,21 @@ body{
     background-size: 100% auto;
 }
 .container{
-	margin: 0px auto;
-	max-width: 900px;
 	background-color: white;
+	margin: 0px auto;
 }
-#nav-container{
-	background-color: gray;
+#user-header{
+	padding-left: 5%;
 }
 .background{
-	background-image: url("../images/nahm_rest.jpg");
+	background: white;
 }
-.container-text{
-	margin: 0px 100px;
-	padding: 30px 0px 30px 0px;
+div ul{
+	background: #FFC254;
 }
-h2 button{
-	margin: 0px auto;
-}
+
+
+
+
+
+

@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>	
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title> Restaurant Selector </title>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,97 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="page-header">
-				 <h1>Random Restaurant Selector<small> Discover a new reataurant</small></h1>
+			<div class="row page-header" id="user-header">
+				 <h1>Restaurant Selector</h1>
 			</div>
-			<div class="background">
-				<div class="content_area">
-					<div class="container-text">
-						<div class="row">
-						  <div class="col-lg-6"><form>
-					<h3>What type of restaurant are you looking for?</h3> <input type="text" name="restauranttype" placeholder="Mexican"></form></div>
-						  <div class="col-lg-4"><form>
-					<h3>What city? </h3> <input type="text" name="cityname" placeholder="Northridge, CA">
-					</form></div>
-						</div>
-						<div class="row" id="row1">
-  <div class="col-12 col-lg-9"><h3>Results</h3>
-					<ol>
-						<li>Restaurant 1 dolor sit amet</li>
-						<li>Restaurant 2 dolor sit amet</li>
-						<li id="highlight">Restaurant 3 dolor sit amet</li>
-						<li>Restaurant 4 dolor sit amet</li>
-						<li>Restaurant 5 dolor sit amet</li>
-						<li>Restaurant 6 dolor sit amet</li>
-						<li>Restaurant 7 dolor sit amet</li>
-						<li>Restaurant 8 dolor sit amet</li>
-						<li>Restaurant 9 dolor sit amet</li>
-						<li>Restaurant 10 dolor sit amet</li>
-					</ol></div>
-</div>
-
-				
-					<h2><button>Pick a Restaurant at Random</button>
+			
+			<div class="row">
+ 				<div class="col-lg-5 col-offset-1 background">
+ 					<form>
+					<h3>Type of restaurant?</h3> <input type="text" name="restauranttype" placeholder="Mexican food"></form>
+				</div>
+					
+				<div class="col-lg-3 col-offset-1 background">
+					<form>
+					<h3>What city? </h3> <input type="text" name="cityname" placeholder="Santa Monica, CA">
+					</form>
 				</div>
 			</div>
-			<div id="nav_container"
+
+			<div class="row">
+  				<div class="col-lg-5 col-offset-1 background">
+  					<h2>Results</h2>
+  					<div class="list-group the-icons">
+  						
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Tacos Por Favor <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4> 
+    					<p class="list-group-item-text">This place is great if you're looking for tasty, cheap, authentic Mexican food with no frills. I've been a number of times and love Mexican food, so I'm always in the mood. </p>
+  						</a>
+  						
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Casa Martin Restaurant <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">On vacay from SF - looking for a place near, or on the beach, in Santa Monica for Mexican food.  Chose this place due to 4 star review - over the place on the pier. </p>
+  						</a>
+  						
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Lares Restaurant <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">is fantastic.  To address the question of authenticity, I will say, if you are eating food in a restaurant in Los Angeles, 99.999% of the time, Mexican hands have prepared it.</p>
+  						</a>
+	  				
+  						
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">El Cholo <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">El Cholo is very accommodating for huge parties, I think we came here with 20+!  The type of food here is what I would consider traditional mexican food</p>
+  						</a>
+  						
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Mercado <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">of the restaurant. It's "fancy" Mexican food. I get it, some people don't think Mexican food should be gourmet but the chef does a wonderful job with his dishes </p>
+  						</a>
+
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Gilbert's El Indio Restaurant <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">We've been going here for a long time, but usually go for the breakfast specials.  As a Mexican, I can say the food tastes pretty homemade and is reasonably good.</p>
+  						</a>
+
+  						<a href="#" class="list-group-item">
+    					<h4 class="list-group-item-heading">Border Grill<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">Over priced mexican food. Very high quality mexican food served in small portions.</p>
+  						</a>
+
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Casa Escobar<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text"> place more stars...I've definitely had better Mexican food.  I ordered the No. 1 which is an enchilada, a chili relleno, a chicken taco and beans & rice.</p>
+  						</a>
+
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Frida Taqueria<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">did not automatically give me limes, seafood's best friend, so we asked for more for our table later on. As the entrees are mostly all more than $10, Frida's is on the pricey side for Mexican</p>
+  						</a>
+
+  						<a href="#" class="list-group-item ">
+    					<h4 class="list-group-item-heading">Pinches Tacos<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+    					<p class="list-group-item-text">tacos) as opposed to less-authentic Mexican food chains like Baja Fresh ($2.75 tacos, same size).  Overall, the food is delicious and they're still the cheapest restaurant in the Santa Monica</p>
+  						</a>
+	  				
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-offset-1 background">
+					<h2> Random Results</h2>
+					<img src="images/beach_rest.jpg" width="270px" height="250px">
+				</div>
+
+				<button class="btn btn-info btn-large col-offset-2" center>Pick Randomly</button>
+
+			</div>
+			<nav>
 				<ul class="nav nav-pills nav-justified">
 					<li> <a href="#">Home</a> </li>
 					<li> <a href="#">About Us</a> </li>
 					<li> <a href="#">Contact Us</a> </li>
 				</ul>
-			</div>
-			</div>
+			</nav>
 		</div>
 	</body>
 </html>
