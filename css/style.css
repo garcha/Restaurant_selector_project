@@ -3,22 +3,21 @@ body{
 	background-position: center top;
     background-size: 100% auto;
 }
-.container{
-	background-color: white;
-	margin: 0px auto;
-}
+
 #user-header{
 	padding-left: 5%;
 }
 .background{
 	background: white;
+	border-radius: 7px;
 }
-div ul{
+nav ul li a{
 	background: #FFC254;
+	border-radius: 7px;
+	color: black;
 }
-
-
-
-
+.margin-bottom{
+	margin-bottom: 25px;
+}
 
 

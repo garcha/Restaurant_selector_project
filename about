@@ -10,27 +10,26 @@
     	<meta name="author" content="Random Restaurant searcher">
 	</head>
 	<body>
-		<div class="container">
-			<div class="row page-header" id="user-header">
-				 <h1>Restaurant Selector</h1>
-			</div>
-			
-			<div class="row">
- 				<div class="col-lg-5 col-offset-1 background">
- 					<form>
-					<h3>Type of restaurant?</h3> <input type="text" name="restauranttype" placeholder="Mexican food"></form>
-				</div>
-					
-				<div class="col-lg-3 col-offset-1 background">
-					<form>
-					<h3>What city? </h3> <input type="text" name="cityname" placeholder="Santa Monica, CA">
-					</form>
-				</div>
-			</div>
+		<div class="container ">
+			<div class="row page-header background " id="user-header">
+         <h1><a href="index.html">Can't find a Restaurant?<small>&nbsp We'll find one for you!</small></h1>
+        </div>
+          		
+          <div class="row margin-bottom">
+            <div class="col-lg-3 col-offset-2">
+              <input type="text" class="form-control" placeholder="Type of Restaurent?">
+            </div>
+            <div class="col-lg-3">
+              <input type="text" class="form-control" placeholder="What City?">
+            </div>
+            <div class="col-lg-4">
+              <button type="submit" class="btn btn-default">Find me a Restaurant</button>
+            </div>
+          </div>
 
-			<div class="row">
-  				<div class="col-lg-5 col-offset-1 background">
-  					<h2>Results</h2>
+			   <div class="row margin-bottom">
+  				<div class="col-lg-6 col-offset-1 background">
+  					<h2>Top 10 Results for (type) (city)</h2>
   					<div class="list-group the-icons">
   						
   						<a href="#" class="list-group-item ">
@@ -87,16 +86,22 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-offset-1 background">
-					<h2> Random Results</h2>
+				<div class="col-lg-3 col-offset-1 background">
+					<h2> Random Pick</h2>
 					<img src="images/beach_rest.jpg" width="270px" height="250px">
+
+              <a href="#" class="list-group-item ">
+              <h4 class="list-group-item-heading">Casa Escobar<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></h4>
+              <p class="list-group-item-text"> place more stars...I've definitely had better Mexican food.  I ordered the No. 1 which is an enchilada, a chili relleno, a chicken taco and beans & rice.</p>
+              </a>
+          <button class="btn btn-info btn-large" center>Pick Again</button>
 				</div>
 
-				<button class="btn btn-info btn-large col-offset-2" center>Pick Randomly</button>
+				
 
 			</div>
 			<nav>
-				<ul class="nav nav-pills nav-justified">
+				<ul class="nav nav-pills nav-justified margin-bottom">
 					<li> <a href="#">Home</a> </li>
 					<li> <a href="#">About Us</a> </li>
 					<li> <a href="#">Contact Us</a> </li>
