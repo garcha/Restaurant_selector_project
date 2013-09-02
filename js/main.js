@@ -42,7 +42,7 @@ OAuth.SignatureMethod.sign(message, accessor);
 $(function(){
   // getData();
 
-  $('#submit').on("click", function() {
+  $('form').on("submit", function() {
       // get data from inputs
 
       terms = $('#terms').val();
@@ -64,6 +64,18 @@ $(function(){
 
   });
 });
+
+
+//enter runs submit "enter" function
+function enter(){
+  $("#near").keyup(function(event){
+      if(event.keyCode == 13){
+          $("#near").click();
+      }
+  });
+}
+
+
 //getData from yelp, and write function are run
 function getData() {
   var parameterMap = OAuth.getParameterMap(message.parameters);
@@ -87,7 +99,6 @@ function getData() {
             businesses.push(b);
           });
 
-          console.log(b);
           // writeToPage();
           writePageHeader();
           deleteContent();
@@ -129,21 +140,10 @@ function writePagecontent(){
   }
 };
 
-
-
 // delete content after submit
 function deleteContent(){
     $(".list").empty();
 };
-
-//enter runs submit function
-function enter(){
-  $("#near").keyup(function(event){
-      if(event.keyCode == 13){
-          $("#near").click();
-      }
-  });
-}
 
 //choose a random number and assign to businesses
 function random(){
@@ -158,10 +158,10 @@ function writeRandomcontent(){
 
 //random Button function
 $(document).ready(function(){
-    $( ".randomButton" ).click(function() {
-        random();
-        writeRandomcontent();;
-    });
+    $('.randomButton').on("click", function(){
+      random();
+      writeRandomcontent();
+});
 });
 
 getData();
