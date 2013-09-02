@@ -27,7 +27,8 @@ img{
 }
 .reviewImg{
 	width: 100px;
-	height: 25px;
 }
-
+ul li{
+	text-decoration: none;
+}
 
